@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="../bootstrap-3.3.0-dist/dist/css/bootstrap.css" />
+		<title></title>
+		<style>
+			body,html,div,img{
+				padding: 0;
+				margin: 0;
+			}
+			a{
+				color:#E6E2F3;
+			}
+			.top-row{
+				height: 120px;
+				line-height: 120px;
+				font-size: 20px;
+				color: #FFFFff;
+				background: #45414F;
+			}
+			.top-row-txt{
+				letter-spacing: 15px;
+			}
+			.top-row-nav{
+				height: 80px;
+				line-height: 80px;
+				font-size: 20px;
+				color: #fff;
+				background: #45414F;
+			}
+			.collapsed{
+				background: #fff;
+			}
+			.collapsed span{
+				background: #000;
+			}
+			.nav-but:hover{
+				color: #000;
+				background: #E6E2F3 !important;
+			}
+			.main-one{
+				width:100%;
+			}
+			.main-two{
+				height: 500px;
+				width: 100%;
+			}
+			.main-two-left{
+				height: 500px;
+				width: 25%;
+				background: #DEEDE8;
+				float: left;
+			}
+			.main-two-top{
+				height: 250px;
+				width: 50%;
+				background: #F3F4F6;
+				float: left;
+			}
+			.main-two-right{
+				height: 250px;
+				width: 25%;
+				background: #E8E1DB;
+				float: left;
+			}
+			.main-two-bottom{
+				height: 250px;
+				width: 25%;
+				background: #D8E2EB;
+				float: left;
+			}
+			.main-two-btnrig{
+				height: 250px;
+				width: 50%;
+				background: #F6EFDF;
+				float: left;
+			}
+			.no-back{
+				background:  none !important;
+			}
+			.main-two-left-p p{
+				margin-top: 60px;
+			}
+			#carousel-example-captions{
+				margin-top: 40px;
+			}
+			
+			.main-two .btn-default{
+				margin-top: 50px;
+				margin-left: 90px;
+				background: rgba(255,255,255,0.4);
+				width: 100px;
+				line-height: 30px;
+				text-align: center;
+				border-radius: 20px;
+				border: none;
+			}
+			.main-two .carousel-inner{
+				height: 200px;
+			}
+			.main-two-top img{
+				float: left;
+				height: 250px;
+				margin-left: 90px;
+			}
+			.main-two-top-p{
+				float: left;
+				margin-top: 80px;
+				margin-left: 70px;
+			}
+			.main-two-right{
+				text-align: center;
+			}
+			.main-three{
+				width: 100%;
+				height: 940px;
+			}
+			
+			.main-three .main-three-img{
+				width: 22%;
+				height: 320px;
+				background: #F0F4F5;
+				float: left;
+				margin-top: 70px;
+				margin-left: 25px;
+				text-align: center;
+			}
+			.main-three .main-three-img img{
+				height: 100%;
+			}
+			.main-three .main-three-img p{
+				font-size: 16px;
+				margin-top: 20px;
+			}
+			.main-three-bot{
+				text-align: center;
+				height: 50px;
+				line-height: 50px;
+				width: 180px;
+				border: 1px solid #ccc;
+				border-radius: 25px;
+				margin: auto;
+				font-size: 13px;
+			}
+			.footer{
+				margin-top: 50px;
+				height: 350px;
+				width: 100%;
+				background: #45414F;
+			}
+			.footer .footer-box{
+				width: 20%;
+				float: left;
+				height: 250px;
+				margin-top: 30px;
+				margin-left: 40px;
+			}
+			.footer .footer-box h3{
+				color: #fff;
+				font-size: 16px;
+				line-height: 50px;
+				margin-left: 30px;
+				
+			}
+			.footer .footer-box p{
+				color: #acabaf;
+				font-size: 16px;
+				line-height: 30px;
+				margin-left: 30px;
+			}
+			.footer-bom{
+				clear: both;
+				float: left;
+				width: 170px;
+				height: 50px;
+				text-align: center;
+				margin-left: 43%;
+			}
+			.footer-bom span{
+				font-size: 18px;
+				color: #ccc;
+				width: 50px;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="container">
+			<!--头部上部分-->
+			<div class="top-row">
+			  <div class="col-md-1 col-sm-2 col-xs-4 text-center">
+			  	<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+			  </div>
+			  <div class="col-md-9 col-sm-6 col-xs-4 text-center top-row-txt">ATELIER</div>
+			  <div class="col-md-1 col-sm-2 col-xs-2 text-center">
+			  	<span class="glyphicon glyphicon-headphones" aria-hidden="true"></span>
+			  </div>
+			  <div class="col-md-1 col-sm-2 col-xs-2 text-center">
+			  	<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+			  </div>
+			</div>
+			<!--头部下部分-->
+			<div class="top-row-nav">
+			   <div class="col-md-3 col-sm-1 text-center"></div>
+			  
+			   <div class="col-md-7 col-sm-10 text-center">
+			  <nav class="navbar">
+				  <div class="container-fluid">
+				    <!-- 汉堡按钮 -->
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				      <a class="navbar-brand nav-but" href="#">Nowosci</a>
+				    </div>
+				
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav">
+				        <li class="dropdown">
+				          <a href="#" class="dropdown-toggle nav-but" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="#">Action</a></li>
+				            <li><a href="#">Another action</a></li>
+				            <li><a href="#">Something else here</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">Separated link</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">One more separated link</a></li>
+				          </ul>
+				        </li>
+				        <li><a  class="dropdown-toggle nav-but"  href="#">Link</a></li>
+				        <li class="dropdown">
+				          <a href="#" class="dropdown-toggle nav-but" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="#">Action</a></li>
+				            <li><a href="#">Another action</a></li>
+				            <li><a href="#">Something else here</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">Separated link</a></li>
+				          </ul>
+				        </li>
+				      </ul>
+				    </div><!-- /.navbar-collapse -->
+				  </div><!-- /.container-fluid -->
+				</nav>
+			  </div>
+			   <div class="col-md-2 col-sm-1 text-center"></div>
+			</div>
+			<!--轮播图部分-->
+			<div class="main-one" >
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+				  </ol>
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				    <div class="item active" style="height:500px;background-image: url(../images/01.png); background-repeat: no-repeat;background-position: center center;">
+				    </div>
+				    <div class="item"  style="height:500px;background-image: url(../images/03.jpg); background-repeat: no-repeat;background-position: center center;">
+				    </div>
+				    <div class="item"  style="height:500px;background-image: url(../images/04.jpg); background-repeat: no-repeat;background-position: center center;">
+				    </div>
+				    <div class="item"  style="height:500px;background-image: url(../images/05.jpg); background-repeat: no-repeat;background-position: center center;">
+				    </div>
+				  </div>
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+			</div>
+			<!--方格部分-->
+			<div class="main-two">
+				<div class="main-two-left">
+					<div class="main-two-left-p text-center">
+						<p>ldealne na lato</p>
+						<h3>CROPP TOPY</h3>
+					</div>
+					<div id="carousel-example-captions" class="carousel slide" data-ride="carousel">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#carousel-example-captions" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-example-captions" data-slide-to="1"></li>
+					    <li data-target="#carousel-example-captions" data-slide-to="2"></li>
+					    <li data-target="#carousel-example-captions" data-slide-to="3"></li>
+					  </ol>
+					
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner" role="listbox">
+					    <div class="item active">
+					      <img style="width: 100px; margin: auto;" src="../images/r2.png" alt="...">
+					    </div>
+					    <div class="item">
+					      <img src="../images/20161004151914_99085.png" alt="...">
+					    </div>
+					    <div class="item">
+					      <img src="../images/20161218192651_16397.png" alt="...">
+					    </div>
+					    <div class="item">
+					      <img src="../images/20170501221023_93824.png" alt="...">
+					    </div>
+					    
+					  </div>
+					
+					  <!-- Controls -->
+					  <a class="left carousel-control no-back" href="#carousel-example-captions" role="button" data-slide="prev">
+					    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="right carousel-control no-back" href="#carousel-example-captions" role="button" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+					</div>
+					<a class="btn btn-default" href="#" role="button">ZOBACZ</a>
+				</div>
+				<div class="main-two-top">
+					<img src="../images/r1.png" />
+					<div class="main-two-top-p">
+						<p style="color: #AFADAE;font-size: 16px;">Now kolekcij</p>
+						<p style="font-size: 25px;">SUMMER 2015</p>
+					</div>
+				</div>
+				<div class="main-two-right">
+					<p style="font-size: 25px; line-height: 20px; margin-top: 80px;">DARMOWA</p>
+					<p style="font-size: 25px;line-height: 20px;">DOSTAWA</p>
+					<p style="font-size: 15px;color: #AFADAE;line-height: 10px; margin-top: 20px;">peri ioapwoei</p>
+					<p style="font-size: 15px;color: #AFADAE;line-height: 10px;">pro ssssa</p>
+				</div>
+				<div class="main-two-bottom">
+					<img src="../images/r3.png" style="float:right;margin-top: 30px; margin-right: 30px;" alt="" />
+					<p style="float: right;margin-right: 50px;font-size: 22px;margin-top: 50px;">BEST-</p>
+					<p style="float: right;clear:both;margin-right: 50px;font-size: 22px;">SELLERS</p>
+					<div style="float: right;clear:both;width: 50px;height: 2px; background: #ccc;margin-right: 50px;margin-top: 10px;"></div>
+				</div>
+				<div class="main-two-btnrig">
+					<p style="font-size: 120px;color: #E4D9C5;line-height: 250px;text-align: center;">20%</p>
+					<img src="../images/r4.png" alt="" style="margin-top: -320px; margin-left:220px;z-index: 9;" />
+					<p style="margin-top: -180px; margin-left:410px;z-index: 9;font-size: 28px;">SALE</p>
+				</div>
+			</div>
+			<!--下方格部分-->
+			<div class="main-three">
+				<p style="margin-top:80px;font-size: 22px; text-align: center;">NOWOCRY W SKIEPLE</p>
+				<div style="width: 50px;height: 2px;background: #ccc;margin: 20px auto;"></div>
+				<div class="main-three-img"><img src="../images/r5.png" alt="" /><p>$255.0</p></div>
+				<div class="main-three-img"><img src="../images/r6.png" alt="" /><p>$255.0</p></div>
+				<div class="main-three-img"><img src="../images/r8.png" alt="" /><p>$255.0</p></div>
+				<div class="main-three-img"><img src="../images/r9.png" alt="" /><p>$255.0</p></div>
+				<div class="main-three-img"><img src="../images/r10.png" alt="" /><p>$255.0</p></div>
+				<div class="main-three-img"><img src="../images/r11.png" alt="" /><p>$255.0</p></div>
+				<div class="main-three-img"><img src="../images/r12.png" alt="" /><p>$255.0</p></div>
+				<div class="main-three-img"><img src="../images/r13.png" alt="" /><p>$255.0</p></div>
+			</div>
+			<div class="main-three-bot">POKAZ WSZYSET</div>
+			<div class="footer">
+				<div class="footer-box">
+					<h3>POMOC</h3>
+					<p>acbshdn</p>
+					<p>jkiujih</p>
+					<p>jkuifjh</p>
+				</div>
+				<div class="footer-box">
+					<h3>MOJE KONTO</h3>
+					<p>Moje zamowienia</p>
+					<p>Ustawienia konta</p>
+					<p>Prizechowainia</p>
+				</div>
+				<div class="footer-box">
+					<h3>NEWSLETTER</h3>
+					<p>acbshdn</p>
+					<p>jkiujih</p>
+					<p>jkuifjh</p>
+				</div>
+				<div class="footer-box">
+					<h3>KONTAKT</h3>
+					<p>acbshdn</p>
+					<p>jkiujih</p>
+					<p>jkuifjh</p>
+				</div>
+				<div class="footer-bom">
+					<span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+					<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+					<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../bootstrap-3.3.0-dist/dist/js/jquery-1.11.0.js"></script>
+	<script src="../bootstrap-3.3.0-dist/dist/js/bootstrap.js"></script>
+</html>
